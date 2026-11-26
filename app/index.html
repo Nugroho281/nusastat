@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NusaStat — angka resmi Indonesia: penduduk, ekonomi, harga, ketenagakerjaan, dan provinsi, lengkap dengan sumber dan tahun.">
+<title>NusaStat — Angka Indonesia, Dibaca Sekilas</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/" aria-label="NusaStat — beranda">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="10" cy="30" r="6" fill="#f2a007"/>
+        <circle cx="22" cy="18" r="8" fill="#1f7a5c"/>
+        <circle cx="34" cy="30" r="5" fill="#e4572e"/>
+        <circle cx="40" cy="14" r="3.5" fill="#f2a007"/>
+        <circle cx="12" cy="12" r="3" fill="#e4572e"/>
+      </svg>
+      <span class="brand-name">NusaStat</span>
+      <span class="brand-tag">Angka Indonesia</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a class="nav-link" href="#/">Beranda</a>
+      <a class="nav-link" href="#/penduduk">Penduduk</a>
+      <a class="nav-link" href="#/ekonomi">Ekonomi</a>
+      <a class="nav-link" href="#/harga">Harga</a>
+      <a class="nav-link" href="#/kerja">Kerja</a>
+      <a class="nav-link" href="#/provinsi">Provinsi</a>
+    </nav>
+    <div class="search-box">
+      <label class="visually-hidden" for="site-search">Cari indikator</label>
+      <input id="site-search" type="search" placeholder="Cari indikator… mis. inflasi" autocomplete="off">
+      <ul id="search-results" class="search-results" hidden></ul>
+    </div>
+  </div>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>NusaStat</strong> — ringkasan independen angka Indonesia dari publikasi resmi.
+    Setiap angka disertai sumber dan tahunnya. Bukan situs pemerintah.</p>
+    <p><a href="#/tentang">Tentang &amp; Sumber</a> · Edisi 2024 · Data per November <span id="year">2026</span></p>
+  </div>
+</footer>
+</body>
+</html>
